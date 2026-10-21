@@ -3,5 +3,15 @@
   "outputDirectory": "dist",
   "installCommand": "",
   "framework": null,
-  "cleanUrls": true
+  "cleanUrls": true,
+  "functions": {
+    "api/page.js": { "includeFiles": "{content,src}/**" }
+  },
+  "rewrites": [
+    { "source": "/", "destination": "/api/page?page=home" },
+    { "source": "/about", "destination": "/api/page?page=about" },
+    { "source": "/about/", "destination": "/api/page?page=about" },
+    { "source": "/start-here", "destination": "/api/page?page=start" },
+    { "source": "/start-here/", "destination": "/api/page?page=start" }
+  ]
 }
