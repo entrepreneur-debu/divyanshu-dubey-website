@@ -76,7 +76,8 @@
   "youtube": {
     "headline": "Geopolitics, in under a minute",
     "text": "Outside AI, I make short, simple videos explaining world events on YouTube.",
-    "shorts": ["KmaleAxDwY4", "KuFdmZp4iDM"]
+    "shorts": ["KmaleAxDwY4", "KuFdmZp4iDM"],
+    "videoCount": 3
   },
 
   "analytics": {
