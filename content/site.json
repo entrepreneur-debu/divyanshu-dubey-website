@@ -1,0 +1,85 @@
+{
+  "_help": "Edit the text and links below, then redeploy. You never need to touch build.mjs.",
+
+  "siteUrl": "https://divyanshudubey.com",
+  "name": "Divyanshu Dubey",
+  "jobTitle": "Senior Data Scientist and ML Engineer",
+  "jobTitleShort": "Senior Data Scientist and ML Engineer in automotive R&D",
+  "tagline": "AI, decoded by someone who builds it.",
+  "subline": "I'm a Senior Data Scientist and ML Engineer in automotive R&D. I write about how AI is developing, how it works, and why it matters to you.",
+  "cadenceLine": "A new This Week in AI every Sunday.",
+
+  "email": {
+    "user": "divyanshudub",
+    "domain": "gmail.com"
+  },
+
+  "links": {
+    "substack": "https://thebriefingpoint.substack.com/",
+    "substackSubscribe": "https://thebriefingpoint.substack.com/subscribe",
+    "substackFeed": "https://thebriefingpoint.substack.com/feed",
+    "linkedinProfile": "https://www.linkedin.com/in/divyanshu-dubey-67863117b/",
+    "linkedinNewsletter": "https://www.linkedin.com/build-relation/newsletter-follow?entityUrn=7518545628969201664",
+    "youtube": "https://www.youtube.com/channel/UC_hUKsS-k0KcKk4N0tV9xow",
+    "instagram": "https://www.instagram.com/debu.dubey/"
+  },
+
+  "newsletters": {
+    "substack": {
+      "name": "The Briefing Point",
+      "button": "Subscribe on Substack",
+      "note": "Full articles, straight to your inbox."
+    },
+    "linkedin": {
+      "name": "Divyanshu Decodes",
+      "button": "Subscribe on LinkedIn",
+      "note": "Shorter reads, right in your feed."
+    }
+  },
+
+  "tracks": [
+    {
+      "tag": "Every Sunday",
+      "title": "This Week in AI",
+      "text": "The three AI stories that mattered most, and why. Five minutes, no hype.",
+      "color": "teal"
+    },
+    {
+      "tag": "Explainers",
+      "title": "AI explained",
+      "text": "How the technology actually works, in plain language, from someone who works with it every day.",
+      "color": "crimson"
+    },
+    {
+      "tag": "Work",
+      "title": "AI and your work",
+      "text": "What AI changes for jobs, teams and everyday work, backed by real numbers rather than predictions.",
+      "color": "amber"
+    }
+  ],
+
+  "about": {
+    "header": "I build machine learning systems by day and explain AI by night.",
+    "paragraphs": [
+      "Hi, I'm Divyanshu. I'm a Senior Data Scientist and ML Engineer in automotive R&D, where I work on machine learning every day.",
+      "Outside work, I write about AI: how it's developing, how it works, and why it matters to the rest of us. Every Sunday I publish This Week in AI, a roundup of the three biggest stories, along with deeper articles on my Substack, The Briefing Point. I share shorter versions on LinkedIn in my newsletter, Divyanshu Decodes.",
+      "I'm also fascinated by geopolitics, so I make short, simple videos explaining world events on a separate YouTube channel."
+    ],
+    "facts": [
+      "Senior Data Scientist and ML Engineer, automotive R&D",
+      "M.Tech in Machine Learning, NIT Karnataka, Surathkal",
+      "Based in Bengaluru, writing for readers worldwide"
+    ]
+  },
+
+  "youtube": {
+    "headline": "Geopolitics, in under a minute",
+    "text": "Outside AI, I make short, simple videos explaining world events on YouTube.",
+    "shorts": ["KmaleAxDwY4", "KuFdmZp4iDM"]
+  },
+
+  "analytics": {
+    "_help": "After the domain is live, add it to plausible.io and put the domain here, e.g. divyanshudubey.com. Leave empty to turn analytics off.",
+    "plausibleDomain": ""
+  }
+}

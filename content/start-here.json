@@ -1,0 +1,35 @@
+{
+  "_help": "The Start here list, in reading order. Links are found automatically from your Substack feed by title. To force a link, add \"url\": \"https://...\" to an item.",
+  "items": [
+    {
+      "title": "Robots Can Do 74% of Physical Work. They're Worth It for 0.3%.",
+      "track": "AI and your work",
+      "blurb": "Why the real question for your job is cost, not capability."
+    },
+    {
+      "title": "The AI Agents Didn't Break In. They Just Kept Going.",
+      "track": "AI explained",
+      "blurb": "What an AI agent overstepping its scope means, and why it reaches your UPI app next."
+    },
+    {
+      "title": "Anthropic's AI Spends 80% of Its Time Waiting on Humans. That's Your Job Now.",
+      "track": "AI and your work",
+      "blurb": "One AI company's own data on where humans still fit in the loop."
+    },
+    {
+      "title": "Six AI Giants Promised to Police Themselves. Who Checks the Checkers?",
+      "track": "AI explained",
+      "blurb": "A close read of a voluntary AI safety accord, and what it leaves out."
+    },
+    {
+      "title": "The AI Gold Rush or Bubble? Why the World Is Split Over the Future of Artificial Intelligence",
+      "track": "AI explained",
+      "blurb": "Trillions are flowing into AI. Here is how to judge whether it lasts."
+    },
+    {
+      "title": "The New AI Cold War: How OpenAI and Google Are Pushing Each Other and America Into the Future",
+      "track": "AI explained",
+      "blurb": "How the race between two labs is setting the pace for everyone else."
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "_help": "Used only if the Substack feed can't be reached during a build. The live site normally reads your feed automatically.",
+  "posts": [
+    {
+      "title": "This Week in AI: 12th - 18th October, 2026",
+      "link": "https://thebriefingpoint.substack.com/archive",
+      "date": "2026-10-18",
+      "description": "Cheaper frontier models, regulators knocking on the labs' doors, and an AI company's own data on what happens to work.",
+      "image": "",
+      "stories": [
+        { "tag": "01 · Models", "title": "Gemini 4 Argon goes wide", "color": "teal" },
+        { "tag": "02 · Regulation", "title": "Regulators start knocking", "color": "crimson" },
+        { "tag": "03 · Jobs", "title": "Inside an AI-first workplace", "color": "amber" }
+      ]
+    }
+  ]
+}
