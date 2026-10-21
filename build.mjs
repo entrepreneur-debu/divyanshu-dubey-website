@@ -337,10 +337,13 @@ const jsonLd = () =>
     sameAs: [site.links.substack, site.links.linkedinProfile, site.links.youtube, site.links.instagram],
   })}</script>`;
 
+// Vercel Web Analytics: plain-HTML equivalent of <Analytics/> (the script is served by Vercel once Analytics is enabled).
+const vercelAnalytics = `<script>window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };</script>
+<script defer src="/_vercel/insights/script.js"></script>`;
 const analytics = () =>
-  site.analytics.plausibleDomain
-    ? `<script defer data-domain="${esc(site.analytics.plausibleDomain)}" src="https://plausible.io/js/script.tagged-events.outbound-links.js"></script>`
-    : "";
+  (site.analytics.plausibleDomain
+    ? `<script defer data-domain="${esc(site.analytics.plausibleDomain)}" src="https://plausible.io/js/script.tagged-events.outbound-links.js"></script>\n`
+    : "") + vercelAnalytics;
 
 const doc = (key) => {
   const p = pages[key];
