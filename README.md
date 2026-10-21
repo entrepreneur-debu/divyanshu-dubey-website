@@ -6,7 +6,7 @@ It has no dependencies. `lib/render.mjs` turns the files in `content/` into page
 Pages on Vercel are rendered live and cached for at most **10 seconds**, so:
 
 - **This week in AI** on the homepage and Start here page shows your newest Substack post within about 10 seconds of publishing.
-- **YouTube Shorts** on the homepage are your newest Shorts. With a `YOUTUBE_API_KEY` set (see below) they appear within about 10 seconds; without it, YouTube's public feed can take up to 15 minutes. The IDs in `content/site.json` are only a fallback if YouTube is unreachable.
+- **YouTube** on the homepage shows your 2 newest Shorts and 3 newest videos (change `youtube.videoCount` in `content/site.json`). With a `YOUTUBE_API_KEY` set (see below) new uploads appear within about 10 seconds; without it, YouTube's public feed can take up to 15 minutes. The IDs in `content/site.json` are only a fallback if YouTube is unreachable.
 - **Start here links** are matched to your Substack posts by title.
 - **Edits to `content/`** go live when Vercel redeploys after your commit, in about a minute.
 - **LinkedIn** posts are not pulled in: LinkedIn offers no public feed for personal profiles.
