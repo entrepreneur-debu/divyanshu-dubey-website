@@ -1,5 +1,3 @@
-# divyanshudubey.com
-
 Personal brand site for Divyanshu Dubey: Home, About and Start here.
 It has no dependencies. One script, `build.mjs`, turns the files in `content/` into a static site in `dist/`.
 
