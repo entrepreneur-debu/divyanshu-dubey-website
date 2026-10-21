@@ -4,8 +4,10 @@ It has no dependencies. One script, `build.mjs`, turns the files in `content/` i
 ## What updates by itself
 
 - **This week in AI** on the homepage and Start here page comes from the Substack feed at every build.
+- **YouTube Shorts** on the homepage are your newest Shorts from the channel feed at every build. The IDs in `content/site.json` are only a fallback if the feed is down.
 - **Start here links** are matched to your Substack posts by title.
-- A GitHub Action rebuilds the site every **Sunday at 8:30 pm IST**, so a new edition appears without you doing anything.
+- A GitHub Action rebuilds the site **every 3 hours**, so new posts and Shorts appear without you doing anything.
+- **LinkedIn** posts are not pulled in: LinkedIn offers no public feed for personal profiles.
 
 ## What you edit (no code)
 
@@ -24,7 +26,7 @@ Edit on GitHub in the browser and commit. The site redeploys in about a minute.
 2. Sign in to [vercel.com](https://vercel.com) with GitHub and import the repository. The settings in `vercel.json` are picked up automatically; click **Deploy**.
 3. Buy your domain (divyanshudubey.com, or divyanshudubey.in as backup). In Vercel, open **Project → Settings → Domains**, add it, and follow the DNS steps shown.
 4. Put the real domain in `content/site.json` as `siteUrl`, and commit.
-5. Weekly refresh: in Vercel, **Project → Settings → Git → Deploy Hooks**, create a hook named "weekly". In GitHub, **Settings → Secrets and variables → Actions**, add a secret `VERCEL_DEPLOY_HOOK` with that URL.
+5. Auto refresh: in Vercel, **Project → Settings → Git → Deploy Hooks**, create a hook named "auto-refresh". In GitHub, **Settings → Secrets and variables → Actions**, add a secret `VERCEL_DEPLOY_HOOK` with that URL.
 
 Netlify works too: `netlify.toml` is included.
 

@@ -1,11 +1,11 @@
-# Rebuilds the site every Sunday evening (8:30 pm IST) so the newest
-# "This Week in AI" edition appears without you doing anything.
+# Rebuilds the site every 3 hours so new Substack posts and YouTube Shorts
+# appear without you doing anything.
 # Setup: in Vercel, Project > Settings > Git > Deploy Hooks, create a hook,
 # then add its URL to this GitHub repo as the secret VERCEL_DEPLOY_HOOK.
-name: Weekly refresh
+name: Auto refresh
 on:
   schedule:
-    - cron: "0 15 * * 0"
+    - cron: "0 */3 * * *"
   workflow_dispatch:
 jobs:
   rebuild:

@@ -58,7 +58,32 @@ async function loadPosts() {
     return { posts: fallback, live: false };
   }
 }
+// ---------- YouTube feed ----------
+// The newest Shorts from the channel feed; content/site.json youtube.shorts is the fallback.
+async function loadShorts() {
+  const count = site.youtube.shorts.length;
+  try {
+    const ctrl = new AbortController();
+    const timer = setTimeout(() => ctrl.abort(), 10000);
+    const res = await fetch(site.links.youtubeFeed, { signal: ctrl.signal, headers: { "user-agent": "site-build" } });
+    clearTimeout(timer);
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    const xml = await res.text();
+    const ids = [...xml.matchAll(/<entry>([\s\S]*?)<\/entry>/g)]
+      .filter(([, it]) => /href="https:\/\/www\.youtube\.com\/shorts\//.test(it))
+      .map(([, it]) => (it.match(/<yt:videoId>([^<]+)<\/yt:videoId>/) || [])[1])
+      .filter(Boolean);
+    if (!ids.length) throw new Error("feed had no Shorts");
+    console.log(`YouTube: ${ids.length} Shorts`);
+    return [...new Set([...ids, ...site.youtube.shorts])].slice(0, count);
+  } catch (err) {
+    console.warn(`YouTube feed unavailable (${err.message}); using content/site.json shorts`);
+    return site.youtube.shorts;
+  }
+}
+
 const { posts } = await loadPosts();
+const shorts = await loadShorts();
 const latestEdition = posts.find((p) => /this week in ai/i.test(p.title)) || posts[0];
 
 const archiveSearch = (title) =>
@@ -228,7 +253,7 @@ const homeBody = () => `
         <a class="btn btn-ghost plausible-event-name=YouTube+Channel" href="${esc(site.links.youtube)}" target="_blank" rel="noopener">${icon.youtube}Watch on YouTube</a>
       </div>
       <div class="shorts">
-        ${site.youtube.shorts
+        ${shorts
           .map(
             (id, i) => `
         <a class="short" href="https://youtube.com/shorts/${esc(id)}" target="_blank" rel="noopener" aria-label="Watch geopolitics short ${i + 1} on YouTube">
