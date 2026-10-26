@@ -9,7 +9,8 @@ Pages on Vercel are rendered live and cached for at most **10 seconds**, so:
 - **YouTube** on the homepage shows your 2 newest Shorts and 3 newest videos (change `youtube.videoCount` in `content/site.json`). With a `YOUTUBE_API_KEY` set (see below) new uploads appear within about 10 seconds; without it, YouTube's public feed can take up to 15 minutes. The IDs in `content/site.json` are only a fallback if YouTube is unreachable.
 - **Start here links** are matched to your Substack posts by title.
 - **Edits to `content/`** go live when Vercel redeploys after your commit, in about a minute.
-- **LinkedIn** posts are not pulled in: LinkedIn offers no public feed for personal profiles.
+- **Latest articles** on the homepage lists your newest Substack posts and newest Divyanshu Decodes editions on LinkedIn, 4 each (change `latestArticles` in `content/site.json`). LinkedIn has no feed, so the site reads the newsletter's public page; if LinkedIn blocks that, the list in `content/fallback-linkedin.json` is shown instead.
+- **Regular LinkedIn posts** (not newsletter editions) are not pulled in: LinkedIn doesn't show them publicly.
 
 ## What you edit (no code)
 

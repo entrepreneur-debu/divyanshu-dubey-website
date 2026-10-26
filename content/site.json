@@ -20,6 +20,7 @@
     "substackFeed": "https://thebriefingpoint.substack.com/feed",
     "linkedinProfile": "https://www.linkedin.com/in/divyanshu-dubey-67863117b/",
     "linkedinNewsletter": "https://www.linkedin.com/build-relation/newsletter-follow?entityUrn=7518545628969201664",
+    "linkedinNewsletterPage": "https://www.linkedin.com/newsletters/divyanshu-decodes-7518545628969201664/",
     "youtube": "https://www.youtube.com/channel/UC_hUKsS-k0KcKk4N0tV9xow",
     "youtubeFeed": "https://www.youtube.com/feeds/videos.xml?channel_id=UC_hUKsS-k0KcKk4N0tV9xow",
     "instagram": "https://www.instagram.com/debu.dubey/"
@@ -72,6 +73,8 @@
       "Based in Bengaluru, writing for readers worldwide"
     ]
   },
+
+  "latestArticles": 4,
 
   "youtube": {
     "headline": "Geopolitics, in under a minute",

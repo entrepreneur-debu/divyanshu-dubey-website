@@ -215,6 +215,23 @@ section { padding-block: 56px; }
 @media (min-width: 760px) { .read { grid-template-columns: 4.5rem minmax(0, 1fr); padding-block: 28px; } .read::before { font-size: 2.4rem; } }
 .reads-foot { margin-top: 24px; }
 
+/* Latest articles */
+.latest { display: grid; gap: 40px; }
+@media (min-width: 860px) { .latest { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 48px; } }
+.latest-col { display: grid; gap: 16px; align-content: start; justify-items: start; }
+.latest-head { display: flex; align-items: center; gap: 10px; font-size: var(--step-1); font-weight: 700; }
+.latest-head svg { width: 20px; height: 20px; flex: none; color: var(--violet); }
+.latest-head small { font-family: var(--font-label); font-size: 0.72rem; font-weight: 500; color: var(--ink-2); text-transform: uppercase; letter-spacing: 0.08em; }
+.articles { list-style: none; margin: 0; padding: 0; width: 100%; border-top: 1px solid var(--line); }
+.article { border-bottom: 1px solid var(--line); }
+.article a { display: grid; grid-template-columns: 96px minmax(0, 1fr); gap: 16px; align-items: center; padding-block: 16px; color: var(--ink); text-decoration: none; }
+.article-thumb { position: relative; aspect-ratio: 16 / 9; border-radius: 8px; overflow: hidden; background: var(--short-bg); }
+.article-thumb img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.article-text { display: grid; gap: 4px; }
+.article-title { font-family: var(--font-display); font-weight: 600; font-size: 0.98rem; line-height: 1.35; }
+.article a:hover .article-title { color: var(--violet); }
+.article-date { font-size: var(--step--1); color: var(--ink-2); }
+
 /* Also by me */
 .side-door { background: var(--surface); border-block: 1px solid var(--line); }
 .side-grid { display: grid; gap: 32px; align-items: center; }

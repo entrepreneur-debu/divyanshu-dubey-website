@@ -1,0 +1,9 @@
+{
+  "_help": "Used only if LinkedIn can't be reached. The live site normally reads your newsletter page automatically.",
+  "articles": [
+    { "title": "This Week in AI: 19th–25th Oct, 2026", "link": "https://www.linkedin.com/pulse/week-ai-19th25th-oct-2026-divyanshu-dubey-vhpgf", "date": "Oct 25, 2026", "image": "" },
+    { "title": "Paying more for your AI setup? It may not be buying you accuracy.", "link": "https://www.linkedin.com/pulse/paying-more-your-ai-setup-may-buying-you-accuracy-divyanshu-dubey-c4ccf", "date": "Oct 25, 2026", "image": "" },
+    { "title": "This Week in AI: 12th - 18th October, 2026", "link": "https://www.linkedin.com/pulse/week-ai-12th-18th-october-2026-divyanshu-dubey-xe2af", "date": "Oct 21, 2026", "image": "" },
+    { "title": "Anthropic's AI Spends 80% of Its Time Waiting on Humans. That's Your Job Now.", "link": "https://www.linkedin.com/pulse/anthropics-ai-spends-80-its-time-waiting-humans-thats-divyanshu-dubey-2lggf", "date": "Oct 21, 2026", "image": "" }
+  ]
+}
